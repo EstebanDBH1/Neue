@@ -74,6 +74,7 @@ main {
   position: relative;
   text-decoration: none;
   color: white;
+  Font-weight: 630px;
 }
 
 lista li a:hover {
@@ -186,8 +187,8 @@ a:after {
 
 .clock {
   position: absolute;
-  bottom: 1%;
-  left: 2%;
+  bottom: 0%;
+  left: 0.5%;
   display: flex;
   gap: 1rem;
 }

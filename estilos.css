@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Neue-Montreal_book;
+  src: url("fonts/montrealBook.otf");
+}
+
+@font-face {
+  font-family: Neue-Montreal_L;
+  src: url("fonts/montL.otf");
+}
+
+@font-face {
+  font-family: Neue-Montreal_r;
+  src: url("fonts/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+  font-family: Neue-Montreal_b;
+  src: url("fonts/NeueMontrealBold.otf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Neue-Montreal_r;
+  background-color: #ebf8eb;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.btn-toggle {
+  display: none;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 1rem;
+  mix-blend-mode: difference;
+  color: white;
+  font-size: 20px;
+  font-family: Neue-Montreal_book;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.m p {
+  letter-spacing: 0.5px;
+}
+
+.lista {
+  display: flex;
+  list-style: none;
+  gap: 2px;
+}
+
+.lista li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+lista li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.lista li a:before,
+a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  background: #fff;
+}
+
+.lista li a:before {
+  left: 0;
+}
+.lista li a:after {
+  right: 0;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.lista li a:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.lista li a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.txt__header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.txt__header h1 {
+  font-size: 60px;
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: Neue-Montreal_r;
+}
+
+.social {
+  display: flex;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.social a {
+  color: black;
+  font-size: 11px;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.social a:before,
+a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  background: black;
+}
+
+.social a:before {
+  left: 0;
+}
+.social a:after {
+  right: 0;
+  background: black;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.social a:hover:before {
+  background: black;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.social a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.fecha {
+  display: none;
+}
+
+.clock {
+  position: absolute;
+  bottom: 1%;
+  left: 2%;
+  display: flex;
+  gap: 1rem;
+}
+
+.clock p {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .m {
+    display: none;
+  }
+
+  .txt__header h1 {
+    font-size: 50px;
+  }
+}
+
+
+@media (max-width:475px) {
+
+  .txt__header h1{
+    font-size: 40px;
+  }
+  .social a{
+    font-size: 10px;
+  }
+  .lista li a{
+    font-size: 15px;
+  }
+  .logo{
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 356px) {
+
+  .txt__header h1{
+    font-size:30px ;
+  }
+
+  .social{
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

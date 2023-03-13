@@ -74,7 +74,11 @@ main {
   position: relative;
   text-decoration: none;
   color: white;
-  Font-weight: 630px;
+  Font-weight: 630;
+}
+
+.logo{
+Font-weight: 630px;
 }
 
 lista li a:hover {

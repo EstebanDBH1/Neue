@@ -50,10 +50,13 @@ main {
   width: 100%;
   top: 0;
   padding: 1rem;
-  mix-blend-mode: difference;
   color: white;
+  mix-blend-mode:difference;
   font-size: 20px;
-  font-family: Neue-Montreal_book;
+  font-family: Neue-Montreal_r;
+  font-weight: 630;
+  text-transform:uppercase;
+  
 }
 .nav {
   display: flex;
@@ -221,12 +224,8 @@ a:after {
   .social a{
     font-size: 10px;
   }
-  .lista li a{
-    font-size: 15px;
-  }
-  .logo{
-    font-size: 15px;
-  }
+ 
+  
 }
 
 
